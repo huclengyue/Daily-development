@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RollViewPager">
+        <attr name="rollviewpager_hint_mode">
+            <enum name="point" value="0"/>
+            <enum name="number" value="1"/>
+        </attr>
+        <attr name="rollviewpager_hint_gravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="rollviewpager_hint_paddingRight" format="dimension"/>
+        <attr name="rollviewpager_hint_paddingLeft" format="dimension"/>
+        <attr name="rollviewpager_hint_paddingTop" format="dimension"/>
+        <attr name="rollviewpager_hint_paddingBottom" format="dimension"/>
+
+        <attr name="rollviewpager_play_delay" format="integer"/>
+        <attr name="rollviewpager_hint_color" format="color"/>
+        <attr name="rollviewpager_hint_alpha" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="ShadowLayout">
+        <attr name="fengan_shadowed" format="boolean"/>
+        <attr name="fengan_shadow_distance" format="dimension"/>
+        <attr name="fengan_shadow_angle" format="integer"/>
+        <attr name="fengan_shadow_radius" format="dimension"/>
+        <attr name="fengan_shadow_color" format="color"/>
+    </declare-styleable>
+    <!--ShadowView-->
+    <declare-styleable name="ShadowView">
+        <attr name="android:foreground"/>
+        <attr name="shadowMargin" format="dimension"/>
+        <attr name="shadowMarginTop" format="dimension"/>
+        <attr name="shadowMarginLeft" format="dimension"/>
+        <attr name="shadowMarginRight" format="dimension"/>
+        <attr name="shadowMarginBottom" format="dimension"/>
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="cornerRadiusTL" format="dimension"/>
+        <attr name="cornerRadiusTR" format="dimension"/>
+        <attr name="cornerRadiusBL" format="dimension"/>
+        <attr name="cornerRadiusBR" format="dimension"/>
+        <attr name="foregroundColor" format="color"/>
+        <attr name="shadowColor" format="color"/>
+        <attr name="shadowDx" format="float"/>
+        <attr name="shadowDy" format="float"/>
+        <attr name="shadowRadius" format="dimension"/>
+        <attr name="backgroundColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="ShadowView_Layout">
+        <attr name="layout_gravity">
+            <flag name="top"
+                  value="0x30"/>
+            <flag name="bottom"
+                  value="0x50"/>
+            <flag name="left"
+                  value="0x03"/>
+            <flag name="right"
+                  value="0x05"/>
+            <flag name="center_vertical"
+                  value="0x10"/>
+            <flag name="fill_vertical"
+                  value="0x70"/>
+            <flag name="center_horizontal"
+                  value="0x01"/>
+            <flag name="fill_horizontal"
+                  value="0x07"/>
+            <flag name="center"
+                  value="0x11"/>
+            <flag name="fill"
+                  value="0x77"/>
+            <flag name="clip_vertical"
+                  value="0x80"/>
+            <flag name="clip_horizontal"
+                  value="0x08"/>
+            <flag name="start"
+                  value="0x00800003"/>
+            <flag name="end"
+                  value="0x00800005"/>
+        </attr>
+    </declare-styleable>
+</resources>

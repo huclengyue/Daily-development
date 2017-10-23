@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.apkdv.largeimage.ShadowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shadow"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:fengan_shadow_angle="45"
+    app:fengan_shadow_color="#883F51B5"
+    app:fengan_shadow_distance="9dp"
+    app:fengan_shadow_radius="5dp"
+    app:fengan_shadowed="true">
+
+    <com.apkdv.largeimage.imageLoadOld.FrescoImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:actualImageScaleType="centerCrop"
+        app:roundAsCircle="false"
+        app:roundBottomLeft="true"
+        app:roundBottomRight="true"
+        app:roundTopLeft="true"
+        app:roundTopRight="true"
+        app:roundedCornerRadius="10dp"
+        />
+</com.apkdv.largeimage.ShadowLayout>

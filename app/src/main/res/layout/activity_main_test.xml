@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/subsamplingScaleImageView"-->
+    <!--android:layout_width="match_parent"-->
+
+    <!--android:layout_height="match_parent"/>-->
+    <!--<com.apkdv.largeimage.imageLoadOld.FrescoImageView-->
+    <!--android:id="@+id/image"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:actualImageScaleType="centerCrop"-->
+    <!--app:progressBarAutoRotateInterval="5000"-->
+    <!--app:progressBarImage="@mipmap/icon_progress_bar"-->
+    <!--app:progressBarImageScaleType="center"/>-->
+
+    <!--<com.apkdv.largeimage.zoomable.ZoomableDraweeView-->
+        <!--android:id="@+id/zoomabledraweeview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:actualImageScaleType="centerCrop"-->
+        <!--app:progressBarAutoRotateInterval="5000"-->
+        <!--app:progressBarImage="@mipmap/icon_progress_bar"-->
+        <!--app:progressBarImageScaleType="center"/>-->
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>
