@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="50dp"
+
     tools:context="com.apkdv.largeimage.MainActivity">
 
     <com.apkdv.largeimage.rollviewpager.RollPagerView

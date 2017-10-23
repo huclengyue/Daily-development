@@ -2,19 +2,9 @@ package com.apkdv.largeimage
 
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import com.chenenyu.router.Router
+
 import com.chenenyu.router.annotation.Route
 import kotlinx.android.synthetic.main.activity_main4.*
-import android.R.id.primary
-import android.graphics.Color
-import com.facebook.drawee.drawable.ProgressBarDrawable
-import android.support.v4.graphics.drawable.DrawableCompat
-import android.graphics.drawable.Drawable
-import android.support.v7.widget.SwitchCompat
-import android.widget.ImageView
-import com.facebook.drawee.view.SimpleDraweeView
-
 
 
 @Route("main4")
@@ -25,7 +15,7 @@ class MainActivity4 : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        rollpagerview.setAdapter(TestNomalAdapter())
+        rollpagerview.setAdapter(TestNomalAdapter2())
 //        val imageUriProvider = ImageUriProvider.getInstance(this)
 //        val uriSuccess = imageUriProvider.createSampleUri(
 //                ImageUriProvider.ImageSize.XL,
