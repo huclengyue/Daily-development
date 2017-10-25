@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.apkdv.largeimage.ShadowLayout
+<com.apkdv.largeimage.shadow.ShadowView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/shadow"
+    android:id="@+id/shadow_view"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
-    app:fengan_shadow_angle="45"
-    app:fengan_shadow_color="#883F51B5"
-    app:fengan_shadow_distance="9dp"
-    app:fengan_shadow_radius="5dp"
-    app:fengan_shadowed="true">
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    app:cornerRadius="5dp"
+    app:shadowMargin="5dp"
+    app:shadowRadius="15dp">
 
-    <com.apkdv.largeimage.imageLoadOld.FrescoImageView
+    <com.apkdv.middleware.wedgit.roundedimageview.RoundedImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        app:actualImageScaleType="centerCrop"
-        app:roundAsCircle="false"
-        app:roundBottomLeft="true"
-        app:roundBottomRight="true"
-        app:roundTopLeft="true"
-        app:roundTopRight="true"
-        app:roundedCornerRadius="10dp"
-        />
-</com.apkdv.largeimage.ShadowLayout>
+        android:adjustViewBounds="true"
+        android:foreground="#42000000"
+        android:scaleType="centerCrop"
+        android:transitionName="image"
+        app:riv_border_color="@android:color/white"
+        app:riv_corner_radius="5dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="false"/>
+
+</com.apkdv.largeimage.shadow.ShadowView>

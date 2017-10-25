@@ -4,8 +4,9 @@ import android.content.Context;
 import android.util.AttributeSet;
 
 import com.apkdv.imageloader.listener.OnProgressListener;
+import com.apkdv.imageloader.subscaleview.SubsamplingScaleImageView;
 import com.apkdv.utils.DvLog;
-import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
+import com.github.chrisbanes.photoview.PhotoView;
 
 /**
  * Created by android_ls on 2017/5/17.
@@ -38,5 +39,6 @@ public class LargePhotoView extends SubsamplingScaleImageView {
             mOnProgressListener.onProgress(progress);
         }
     }
+
 
 }

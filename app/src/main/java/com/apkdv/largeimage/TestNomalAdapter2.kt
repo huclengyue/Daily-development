@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import com.apkdv.imageloader.ImageLoader
 import com.apkdv.largeimage.rollviewpager.StaticPagerAdapter
+import com.apkdv.largeimage.shadow.ShadowView
 import com.apkdv.middleware.wedgit.roundedimageview.RoundedImageView
 
 /**
@@ -22,7 +23,7 @@ class TestNomalAdapter2 : StaticPagerAdapter() {
     override fun getView(container: ViewGroup, position: Int): View {
         val holder = View.inflate(container.context, R.layout.item_sample_one, null)
         var mPalette = holder.findViewById<RoundedImageView>(R.id.image)
-        var shadowview = holder.findViewById<ShadowLayout>(R.id.shadow)
+        var shadowview = holder.findViewById<ShadowLayout>(R.id.shadow_view)
 
 
 
@@ -33,7 +34,7 @@ class TestNomalAdapter2 : StaticPagerAdapter() {
                     mPalette.setImageBitmap(result)
                     val swatch = palette.swatches[0]
                     if (swatch != null) {
-                        shadowview.shadowColor = Color.parseColor(ColorUtils.toRGBHexString(127, swatch.rgb))
+                        shadowview.shadowColor = Color.parseColor(ColorUtils.toRGBHexString(150, swatch.rgb))
 //                                    shadowview.shadowColor = swatch.rgb
                     }
                 }
@@ -42,11 +43,6 @@ class TestNomalAdapter2 : StaticPagerAdapter() {
         }
 
         return holder
-    }
-
-
-    fun getResUrl(context: Context, id: Int): String {
-        return "res://${context.packageName}/$id"
     }
 
     override fun getCount(): Int {

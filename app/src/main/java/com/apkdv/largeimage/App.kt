@@ -1,6 +1,7 @@
 package com.apkdv.largeimage
 
 import android.app.Application
+import com.apkdv.imageloader.IMloader
 import com.apkdv.utils.DvLog
 import com.chenenyu.router.Router
 import com.facebook.drawee.backends.pipeline.Fresco
@@ -18,12 +19,8 @@ class App : Application() {
             Router.setDebuggable(true)
         }
         val mOkHttpClient = OkHttpClient()
-        var config = OkHttpImagePipelineConfigFactory
-                .newBuilder(this, mOkHttpClient)
-                .build()
-
         Router.initialize(this)
-        Fresco.initialize(this, config)
+        IMloader.init(this,mOkHttpClient)
         DvLog.setShow(true)
     }
 }

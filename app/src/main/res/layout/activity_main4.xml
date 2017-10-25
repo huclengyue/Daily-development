@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -18,4 +18,29 @@
         android:gravity="center"
         app:rollviewpager_play_delay="3000"/>
 
-</FrameLayout>
+    <com.apkdv.largeimage.ShadowLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:fengan_shadow_angle="45"
+        app:fengan_shadow_color="@android:color/holo_orange_dark"
+        app:fengan_shadow_distance="5dp"
+        app:fengan_shadow_radius="5dp"
+        app:fengan_shadowed="true">
+
+        <com.apkdv.middleware.wedgit.roundedimageview.RoundedImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="#000000"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@android:color/white"
+            app:riv_corner_radius="5dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"/>
+
+    </com.apkdv.largeimage.ShadowLayout>
+</LinearLayout>

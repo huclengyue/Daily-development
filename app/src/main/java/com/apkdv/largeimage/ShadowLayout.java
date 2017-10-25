@@ -164,13 +164,13 @@ public class ShadowLayout extends FrameLayout {
         resetShadow();
     }
 
-    public float getShadowDx() {
-        return mShadowDx;
-    }
-
-    public float getShadowDy() {
-        return mShadowDy;
-    }
+//    public float getShadowDx() {
+//        return mShadowDx;
+//    }
+//
+//    public float getShadowDy() {
+//        return mShadowDy;
+//    }
 
     // Reset shadow layer
     private void resetShadow() {
@@ -241,6 +241,7 @@ public class ShadowLayout extends FrameLayout {
                     // Draw extracted alpha bounds of our local canvas
                     mPaint.setColor(adjustShadowAlpha(false));
                     mCanvas.drawBitmap(extractedAlpha, mShadowDx, mShadowDy, mPaint);
+                    mCanvas.drawBitmap(extractedAlpha, mShadowDx*-1, mShadowDy*-1, mPaint);
 
                     // Recycle and clear extracted alpha
                     extractedAlpha.recycle();
@@ -251,7 +252,7 @@ public class ShadowLayout extends FrameLayout {
             }
 
             // Reset alpha to draw child with full alpha
-            mPaint.setColor(adjustShadowAlpha(true));
+            mPaint.setColor(adjustShadowAlpha(false));
             // Draw shadow bitmap
             if (mCanvas != null && mBitmap != null && !mBitmap.isRecycled())
                 canvas.drawBitmap(mBitmap, 0.0F, 0.0F, mPaint);

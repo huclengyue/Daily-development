@@ -1,15 +1,11 @@
 package com.apkdv.largeimage
 
-
 import android.os.Bundle
-
-
 import com.chenenyu.router.annotation.Route
-
 import kotlinx.android.synthetic.main.activity_main.*
 
-@Route("main2")
-class MainActivity2 : BaseActivity() {
+@Route("main3")
+class MainActivity3 : BaseActivity() {
     override fun getLayoutId(): Int {
         return R.layout.activity_main
     }
@@ -22,7 +18,7 @@ class MainActivity2 : BaseActivity() {
         val testUrl = "https://user-gold-cdn.xitu.io/2017/5/25/74c8d908757f15357d26d1cd627f363e?imageView2/1/w/800/h/600/q/85/format/jpg/interlace/1"
 
 //        LoadImage(testUrl2, this, subsamplingScaleImageView)
-        LoadImage(testUrl, this, photo_view,subsamplingScaleImageView)
+        LoadImage(testUrl3, this, photo_view, subsamplingScaleImageView)
 
     }
 }
